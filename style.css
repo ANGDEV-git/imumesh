@@ -2,6 +2,7 @@
 
 html {
   min-height: 100%;
+  scroll-behavior: smooth;
 }
 
 .container {
@@ -195,4 +196,12 @@ a::after {
 }
 
 
+
+#section1 {
+  height: 700px;
+}
+
+#section2 {
+  height: 600px;
+}
 
