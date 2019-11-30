@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 html {
@@ -24,7 +23,6 @@ body {
 }
 
 .noise {
-  pointer-events: none;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -32,6 +30,10 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.09;
+}
+
+.bread {
+  padding-top: 20px;
 }
 
 .bread a {
@@ -43,7 +45,7 @@ body {
 
 .terminal {
 
-  padding-top: 3rem;
+  padding: 3rem;
   text-transform: uppercase;
 
 }
@@ -58,6 +60,14 @@ body {
     font-size: 25px;
   }
 
+  .errorcode {
+    font-size: 35px;
+  }
+
+  .det h4 {
+    font-size: 30px;
+  }
+
 }
 
 @media screen and (max-width: 600px) {
@@ -67,6 +77,13 @@ body {
 
   div.terminal h4 {
     font-size: 15px;
+  }
+  .errorcode {
+    font-size: 25px;
+  }
+  
+  .det h4 {
+    font-size: 20px;
   }
 }
 
@@ -113,7 +130,7 @@ a::after {
 .det {
   margin-right: 2.5cm;
   color: rgb(3, 241, 43);
-  text-shadow: 0 0 1ex #33ff33, 0 0 2px rgba(255, 255, 255, 0.8);
+  text-shadow: 0 0 1ex #33ff33, 0 0 2px rgba(255, 255, 255, 0.8); 
 }
 
 #webProgress {
@@ -176,3 +193,6 @@ a::after {
 #infoBar {
   font-size: 10px;
 }
+
+
+
