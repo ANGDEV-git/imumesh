@@ -1,6 +1,6 @@
-
-  $(document).ready(function() {
-    return $('#contact-form').submit(function(e) {
+(function () {
+  $(document).ready(function () {
+    return $('#contact-form').submit(function (e) {
       var email, message, name;
       name = document.getElementById('inputName');
       email = document.getElementById('inputEmail');
@@ -11,10 +11,10 @@
       } else {
         $.ajax({
           method: 'POST',
-          url: 'https://formspree.io/imumesh@techie.com',
+          url: '//formspree.io/imumesh@techie.com',
           data: $('#contact-form').serialize(),
-          datatype: 'json'
-        });
+          datatype: 'json' });
+
         e.preventDefault();
         $(this).get(0).reset();
         return alertify.success('Message sent');
@@ -22,4 +22,5 @@
     });
   });
 
+}).call(this);
 
