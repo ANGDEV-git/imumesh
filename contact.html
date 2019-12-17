@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    
+
     <link rel='stylesheet' href='https://treehouse-code-samples.s3.amazonaws.com/poly/css/application.css'>
-<link rel='stylesheet' href='https://alertifyjs.com/build/css/alertify.css'>
-<link rel='stylesheet' href='https://alertifyjs.com/build/css/themes/default.css'>
+    <link rel='stylesheet' href='https://alertifyjs.com/build/css/alertify.css'>
+    <link rel='stylesheet' href='https://alertifyjs.com/build/css/themes/default.css'>
 
 
 
@@ -34,15 +34,28 @@
                 <a href="books.html" class="badge badge-warning">books</a>
                 <a href="resources.html" class="badge badge-warning">resources</a>
             </p>
-            
-            <form id="contact-form">      
-                    <input id="inputName" name="name" type="text" class="feedback-input" placeholder="Name" />   
-                    <input id="inputEmail" name="email" type="text" class="feedback-input" placeholder="Email" />
-                    <textarea id="inputMessage" name="text" class="feedback-input" placeholder="Comment"></textarea>
-                    <input id="email-submit-btn" type="submit" value="SEND"/>
+
+            <!-- <form id="contact-form">
+                <input id="inputName" name="name" type="text" class="feedback-input" placeholder="Name" />
+                <input id="inputEmail" name="email" type="text" class="feedback-input" placeholder="Email" />
+                <textarea id="inputMessage" name="text" class="feedback-input" placeholder="Comment"></textarea>
+                <input id="email-submit-btn" type="submit" value="SEND" />
+            </form> -->
+
+            <form action="https://formspree.io/xgeowppv" method="POST" enctype="multipart/form-data">
+                <label>
+                    Your email:
+                    <input type="text" name="_replyto">
+                </label>
+                <label>
+                    Your file:
+                    <input type="file" name="upload">
+                </label>
+
+                <button type="submit">Send</button>
             </form>
 
-            
+
 
 
 
@@ -52,9 +65,10 @@
         <br>
 
 
-<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
-<script src='https://alertifyjs.com/build/alertify.js'></script><script  src="script.js"></script>
-        
+        <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+        <script src='https://alertifyjs.com/build/alertify.js'></script>
+        <script src="script.js"></script>
+
 
 </body>
 
