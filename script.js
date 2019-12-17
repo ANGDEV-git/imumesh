@@ -11,7 +11,7 @@
       } else {
         $.ajax({
           method: 'POST',
-          url: '//formspree.io/imumesh@techie.com',
+          url: 'https://formspree.io/xgeowppv',
           data: $('#contact-form').serialize(),
           datatype: 'json'
         });
