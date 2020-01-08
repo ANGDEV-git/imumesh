@@ -212,6 +212,12 @@ a::after {
 }
 
 
+.media img {
+  height: 60px;
+  widows: 60px;
+}
+
+
 /* circle */
 
 .progress-circle {
