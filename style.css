@@ -11,30 +11,25 @@ html {
 }
 
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
-/* body {
-  background: #111;
-} */
+
 .hidden {
   opacity:0;
 }
 .text_scroll {
  
   font-family:Khula;
-  font-size:4em;
-  text-align:center;
-  height:200px;
-  width:600px;
+  font-size:2em;
+  text-align:left;
+  height:100px;
+  width:auto;
   display:block;
   position:absolute;
   color:white;
-  top:0;
-  bottom:0;
-  left:0;
-  right:0;
   margin:auto;
+  
 }
 .text-underscore {
-   display:inline-block;
+  display:inline-block;
   position:relative;
   top:-0.14em;
   left:10px;
@@ -51,7 +46,6 @@ body {
   font-family: "Inconsolata", Helvetica, sans-serif;
   font-size: 1.5rem;
   color: rgba(0, 0, 0, 0.8);
-  text-shadow: 0 0 1ex #33ff33, 0 0 2px rgba(255, 255, 255, 0.8);
 }
 
 .noise {
@@ -66,7 +60,8 @@ body {
 }
 
 .bread {
-  padding-top: 20px;
+  padding-top: 55px;
+  text-align: left;
 }
 
 .bread a {
@@ -77,11 +72,23 @@ body {
 
 
 .terminal {
-
   padding: 3rem;
   text-transform: uppercase;
-
+  display:block;
+  text-align: center;
 }
+
+.dp {
+  position: relative;
+  margin-top: 8px;
+}
+
+/* @media screen and (max-width: 600px) {
+  .media img media-body {
+    align-items: left;
+    padding: 4rem;
+  }
+} */
 
 @media screen and (min-width: 601px) {
   div.terminal {
@@ -130,6 +137,14 @@ body {
   content: "> ";
 }
 
+
+.media {
+  text-align: left;
+}
+
+.skills {
+  text-align: left;
+}
 
 .input {
   color: rgba(192, 255, 192, 0.8);
@@ -234,30 +249,35 @@ a::after {
 
 #section2 {
   height: 650px;
-  padding-left: 4.5rem;
+  display:inline-block;
+  position:absolute;
+  margin:auto;
+}
+
+#section2 h2 {
+  text-align: center;
+  margin-bottom: 1cm;
 }
 
 
-.dp {
-  margin-top: 8px;
-  height: 200px;
-  widows: 200px;
-}
+
 
 
 /* circle */
 
 .progress-circle {
   font-size: 20px;
-  margin: 20px;
+  margin: auto;
+  margin-top: 20px;
+  margin-left: 150px;
+  margin-bottom: 30px;
   position: relative;
-  /* so that children can be absolutely positioned */
-  padding: 0;
   width: 5em;
   height: 5em;
-  background-color: rgb(34, 211, 78);
+  background-color: black;
   border-radius: 50%;
   line-height: 5em;
+  
 }
 
 .progress-circle:after {
@@ -270,7 +290,7 @@ a::after {
   border-radius: 50%;
   width: 4.3em;
   height: 4.3em;
-  background-color: white;
+  background-color: cornflowerblue;
   content: " ";
 }
 
@@ -281,8 +301,9 @@ a::after {
   width: 5em;
   text-align: center;
   display: block;
-  color: #53777A;
+  color: black;
   z-index: 2;
+  align-items: center;
 }
 
 .left-half-clipper {
@@ -311,7 +332,7 @@ a::after {
   width: 5em;
   height: 5em;
   border-radius: 50%;
-  border: 0.45em solid rgb(255, 255, 255);
+  border: 0.45em solid rgb(150, 220, 225);
   /*The border is 0.35 but making it larger removes visual artifacts */
   /*background-color: #4D642D;*/
   /* for debug */
@@ -325,7 +346,7 @@ a::after {
   position: absolute;
   /*needed for clipping*/
   clip: rect(0, 5em, 5em, 2.5em);
-  background-color: #53777A;
+  background-color: #135656;
   border-radius: 50%;
   width: 5em;
   height: 5em;
@@ -335,11 +356,13 @@ a::after {
   display: none;
 }
 
-
-
 .w3-row-padding h2 {
-  padding-left: 2.5rem;
+  padding-left: 3rem;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
 }
+
 
 
 /* Progress bar rotation position */
@@ -813,4 +836,50 @@ textarea {
 
 [type="submit"]:hover {
   background: #33ff33;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+
+  .progress-circle {
+    font-size: 20px;
+    margin-top: 20px;
+    margin-left: 70px;
+    margin-bottom: 30px;
+    position: relative;
+    width: 5em;
+    height: 5em;
+    background-color: black;
+    border-radius: 50%;
+    line-height: 5em;
+    
+  }
+
+  .w3-row-padding h2 {
+    padding-left: 0.5rem;
+    align-items: center;
+    color: #000000;
+    text-decoration: none;
+  }
+
+  .bread {
+    margin-top: 15px;
+  }
+  
+  .bread a {
+    font-size: 10px;
+    margin: 2.5px;
+  }
+
+  .text_scroll {
+ 
+    font-size:1.5em;  
+    
+  }
+  
+
 }
